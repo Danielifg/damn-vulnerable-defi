@@ -1,0 +1,29 @@
+[profile.default]
+src = "contracts"
+test = "test/"
+out = "build/contracts"
+libs = ["node_modules","lib"]
+sender = '0x1d3Af21a1889A1262980Fb8021bF91B792584A88'
+gas_reports = ["UniswapV3Exchange"]
+auto_detect_solc=true
+
+
+## set only when the `truffle` profile is selected
+[profile.truffle]
+src = "contracts"
+test = "test/"
+out = "build/contracts"
+libs = ["node_modules","lib"]
+sender = '0x1d3Af21a1889A1262980Fb8021bF91B792584A88'
+gas_reports = ["UniswapV3Exchange"]
+auto_detect_solc=true
+
+
+## set when profile hardhat is selected
+[profile.hardhat]
+src = "contracts"
+test = "test/"
+out = "artifacts"
+libs = ["node_modules","lib"]
+sender = '0x1d3Af21a1889A1262980Fb8021bF91B792584A88'
+auto_detect_solc=true
